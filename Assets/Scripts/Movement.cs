@@ -27,11 +27,14 @@ public class Movement : MonoBehaviour
 
     Vector3 moveDirection;
 
-     Rigidbody rb;
+    Rigidbody rb;
+    Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+
 
         readyToJump = true;
     }
@@ -44,6 +47,9 @@ public class Movement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
         PlayerInput();
         SpeedControl();
+        Move();
+
+
 
         if (grounded) 
         {
@@ -54,13 +60,12 @@ public class Movement : MonoBehaviour
             rb.drag = 0;
         }
 
-       
     }
     
 
     void FixedUpdate()
     {
-        Move();
+       
     }
 
     private void PlayerInput()
@@ -84,23 +89,92 @@ public class Movement : MonoBehaviour
         }
        
     }
-
+    
     private void Move()
     {
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+  
 
 
         //on ground
         if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            if (Input.GetKey(KeyCode.S))
+            {
+                anim.Play("MoveDown");
+                moveDirection = -orientation.forward * verticalInput + orientation.right * horizontalInput;
+                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+            }
+
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                anim.Play("MoveUp");
+                moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                anim.Play("MoveLeft");
+                moveDirection = new Vector3(-1, 0, 0);
+                Debug.Log(moveDirection);
+                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                anim.Play("MoveRight");
+                moveDirection = new Vector3(1, 0, 0);
+                Debug.Log(moveDirection);
+                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+
+            }
+
+
+            //rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
         }
         else if (!grounded)
         {
-            
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                anim.Play("MoveDown");
+                moveDirection = -orientation.forward * verticalInput + orientation.right * horizontalInput;
+                rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
+            }
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                anim.Play("MoveUp");
+                moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+                rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                anim.Play("MoveLeft");
+                moveDirection = new Vector3(-1, 0, 0);
+                Debug.Log(moveDirection);
+                rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
+
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                anim.Play("MoveRight");
+                moveDirection = new Vector3(1, 0, 0);
+                Debug.Log(moveDirection);
+                rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
+
+            }
+
+            //rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
         }
-       
+
     }
 
     private void SpeedControl()
