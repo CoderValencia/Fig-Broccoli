@@ -119,7 +119,7 @@ public class Movement : MonoBehaviour
             {
                 anim.Play("MoveLeft");
                 moveDirection = new Vector3(-1, 0, 0);
-                Debug.Log(moveDirection);
+
                 rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
 
             }
@@ -128,7 +128,7 @@ public class Movement : MonoBehaviour
             {
                 anim.Play("MoveRight");
                 moveDirection = new Vector3(1, 0, 0);
-                Debug.Log(moveDirection);
+
                 rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
 
             }
@@ -158,7 +158,7 @@ public class Movement : MonoBehaviour
             {
                 anim.Play("MoveLeft");
                 moveDirection = new Vector3(-1, 0, 0);
-                Debug.Log(moveDirection);
+
                 rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
 
             }
@@ -167,7 +167,7 @@ public class Movement : MonoBehaviour
             {
                 anim.Play("MoveRight");
                 moveDirection = new Vector3(1, 0, 0);
-                Debug.Log(moveDirection);
+
                 rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
 
             }

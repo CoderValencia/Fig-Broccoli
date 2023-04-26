@@ -5,72 +5,85 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    public Rigidbody rb;
+   // public Rigidbody rb;
     public Collider coll;
-    public Transform player, itemContainer;
+    public Transform player, itemContainer, dropContainer;
+
+    public DropOff dropOff;
 
     public float pickUpRange;
     public float dropForwardForce, dropUpwardForce;
 
     public bool equipped;
 
+    public bool inArea;
+
     private void Start()
     {
-        if(!equipped)
-        {
-            rb.isKinematic= false;
-            coll.isTrigger = false;
-        }
-        if (equipped)
-        {
-            rb.isKinematic = true;
-            coll.isTrigger = true;
+       
+    }
 
+    private void Update()
+    {
+        if(Input.GetKey(KeyCode.X) && inArea == true && equipped == false)
+        {
+            
+            PickUpFunction();
+    
         }
+        else if (Input.GetKey(KeyCode.Z) && dropOff.dropOffArea == true && equipped == true)
+        {
+
+            DropOffFunction();
+        }
+        
     }
     private void PickUpFunction()
     {
-        equipped = true;
+
 
         transform.SetParent(itemContainer);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
-        transform.localScale = Vector3.one; 
-
-        rb.isKinematic = true;
-        coll.isTrigger = true;
-
-    }
-
-    private void DropFunction()
-    {
-
+        transform.localScale = Vector3.one;
         equipped = true;
-
-        transform.SetParent(null);
-
-        rb.velocity = player.GetComponent<Rigidbody>().velocity;    
-
-        rb.isKinematic = true;
         coll.isTrigger = true;
+
     }
-    private void OnTriggerEnter(Collider collision)
+
+    private void DropOffFunction()
     {
-        if (collision.tag == "Player")
+  
+
+        transform.SetParent(dropContainer);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.localScale = Vector3.one;
+        equipped = false;
+        coll.isTrigger = true;
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player is inside  pick up space");
-          
+
+            inArea = true;
+
 
         }
     }
-    private void OnTriggerExit(Collider collision)
+
+    private void OnCollisionExit(Collision collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player left pick up space");
-           
+
+            inArea = false;
+
 
         }
-
     }
+
 }
