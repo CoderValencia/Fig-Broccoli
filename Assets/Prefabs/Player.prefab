@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 4536521026031038336}
   - component: {fileID: 4536521026031038343}
   - component: {fileID: 4536521026031038342}
+  - component: {fileID: 8689747943522729228}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -246,12 +247,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97814c97f4334a944bc29cd294140488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   orientation: {fileID: 4536521026285904467}
   groundDrag: 12
   jumpForce: 10
   jumpCooldown: 0.25
-  airMultiplier: 0.4
+  airMultiplier: 0.2
   readyToJump: 0
   playerHeight: 1.6
   ground:
@@ -271,6 +272,27 @@ CapsuleCollider:
   m_Height: 1.4980297
   m_Direction: 2
   m_Center: {x: 0.11227453, y: -0.49167687, z: -0.0022935867}
+--- !u!95 &8689747943522729228
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536521026031038349}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f24a34aed4d9d34c88b8757c60d39ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4536521026285904476
 GameObject:
   m_ObjectHideFlags: 0

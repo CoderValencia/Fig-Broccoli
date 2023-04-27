@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/Opening.unity
+    guid: 8cc72992f0d821842b758d0791caea1b
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/TysonGameplay.unity
+    guid: 8dd3030f5e07d18438439f256ddf2df6
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/TysonGameplayAfterPiano.unity
+    guid: 97cccc81304275c47b84023915d1c91b
+  - enabled: 1
+    path: Assets/Scenes/Main Scenes/TysonScene1.unity
+    guid: 425091af5867d6a49a2ae4ecb3e22d9a
   m_configObjects: {}

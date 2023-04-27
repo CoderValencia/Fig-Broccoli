@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickUp : MonoBehaviour
 {
@@ -18,25 +19,43 @@ public class PickUp : MonoBehaviour
 
     public bool inArea;
 
+    public bool dropOffComplete;
+
+    public int dropOffItemsCount;
+
+    public int pickUpItemsCount;
+
     private void Start()
     {
+        dropOffComplete = false;
+        dropOffItemsCount = 0;
        
     }
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.X) && inArea == true && equipped == false)
+        if(Input.GetKey(KeyCode.X) && inArea == true  && dropOffComplete == false)
         {
             
             PickUpFunction();
+
+
+
     
         }
-        else if (Input.GetKey(KeyCode.Z) && dropOff.dropOffArea == true && equipped == true)
+        else if (Input.GetKey(KeyCode.Z) && dropOff.dropOffArea == true)
         {
 
             DropOffFunction();
+            
+            
         }
-        
+
+        if (SceneManager.GetActiveScene().name == "TysonGameplay" && dropOffItemsCount == 1)
+        {
+            SceneManager.LoadScene("TysonGameplayAfterPiano");
+        }
+
     }
     private void PickUpFunction()
     {
@@ -48,7 +67,7 @@ public class PickUp : MonoBehaviour
         transform.localScale = Vector3.one;
         equipped = true;
         coll.isTrigger = true;
-
+        dropOffComplete = true;
     }
 
     private void DropOffFunction()
@@ -58,9 +77,10 @@ public class PickUp : MonoBehaviour
         transform.SetParent(dropContainer);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
-        transform.localScale = Vector3.one;
+        //transform.localScale = Vector3.one;
         equipped = false;
         coll.isTrigger = true;
+        dropOffItemsCount++;
 
     }
 
@@ -69,6 +89,7 @@ public class PickUp : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
+            Debug.Log("Pickable");
             inArea = true;
 
 
