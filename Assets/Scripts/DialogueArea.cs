@@ -82,6 +82,15 @@ public class DialogueArea : MonoBehaviour
                 SceneManager.LoadScene("TysonGameplay");
                 gameObject.SetActive(false);
             }
+            else if (SceneManager.GetActiveScene().name == "Opening")
+                {
+                SceneManager.LoadScene("BroccoliCapture");
+            }
+            else if (SceneManager.GetActiveScene().name == "BroccoliCapture")
+            {
+                SceneManager.LoadScene("TysonScene1");
+            }
+
 
         }
     }

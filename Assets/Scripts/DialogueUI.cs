@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -20,17 +21,25 @@ public class DialogueUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogueArea.areaVisible == false)
+        if (SceneManager.GetActiveScene().name != "BroccoliCapture")
         {
-            DialoguePanel.SetActive(false);
-        }
-        
-        if (dialogueArea.areaVisible == true) 
-        { 
-            DialoguePanel.SetActive(true);
-           
+            if (dialogueArea.areaVisible == false)
+            {
+                DialoguePanel.SetActive(false);
+            }
 
+            if (dialogueArea.areaVisible == true)
+            {
+                DialoguePanel.SetActive(true);
+
+
+            }
         }
+        else
+        {
+            DialoguePanel.SetActive(true);
+        }
+       
         
     }
 

@@ -3,6 +3,7 @@ using Microsoft.Cci;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DropOff : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class DropOff : MonoBehaviour
     {
         if (pickUpCount == 5)
         {
-            Debug.Log(" Everything collected");
+            SceneManager.LoadScene("TysonScene2");
         }
     }
 
