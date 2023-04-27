@@ -11,4 +11,8 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("StartMenu");
     }
+    public void Skip()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
