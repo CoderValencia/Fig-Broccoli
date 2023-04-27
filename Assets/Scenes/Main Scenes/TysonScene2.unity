@@ -1908,7 +1908,7 @@ Camera:
   m_GameObject: {fileID: 769568251}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.09611962, g: 0.11743997, b: 0.1509434, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -5264,6 +5264,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
+    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2863792360513927175, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
+    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
+    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2863792360513927175, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
+    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 3211285780617261846, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
