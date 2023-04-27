@@ -23,12 +23,13 @@ public class PickUp : MonoBehaviour
 
     public int dropOffItemsCount;
 
-    public int pickUpItemsCount;
+  
 
     private void Start()
     {
         dropOffComplete = false;
         dropOffItemsCount = 0;
+        dropOff.pickUpCount = 0;
        
     }
 
@@ -38,6 +39,11 @@ public class PickUp : MonoBehaviour
         {
             
             PickUpFunction();
+            if (SceneManager.GetActiveScene().name == "TysonGameplayAfterPiano")
+            {
+                dropOff.pickUpCount++;
+                this.gameObject.SetActive(false);
+            }
 
 
 
@@ -55,6 +61,8 @@ public class PickUp : MonoBehaviour
         {
             SceneManager.LoadScene("TysonGameplayAfterPiano");
         }
+
+
 
     }
     private void PickUpFunction()

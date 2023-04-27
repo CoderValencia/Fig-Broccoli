@@ -1232,12 +1232,12 @@ MonoBehaviour:
   - 'Tyson: I made my nest right outside his window just to listen to him play. '
   - "Tyson: But since a few days ago, I haven\u2019t heard his piano and I miss it
     with all my heart. "
-  - 'FIg: So you want me to play piano for you?'
+  - 'Fig: So you want me to play piano for you?'
   - "Tyson: If I could hear that beautiful music one more time, then I\u2019ll tell
     you everything I know."
   - 'Fig: Beautiful music. Got it.'
   - "Fig: Hold on, Broccoli! I\u2019m gon\u2019 find you like a hog finds mud!"
-  textSpeed: 0.05
+  textSpeed: 0.03
 --- !u!65 &551834445
 BoxCollider:
   m_ObjectHideFlags: 0

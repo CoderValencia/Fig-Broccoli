@@ -30,6 +30,8 @@ public class Movement : MonoBehaviour
     Rigidbody rb;
     Animator anim;
 
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();

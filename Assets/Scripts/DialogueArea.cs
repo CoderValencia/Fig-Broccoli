@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting.FullSerializer;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueArea : MonoBehaviour
 {
@@ -76,7 +77,12 @@ public class DialogueArea : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            if (SceneManager.GetActiveScene().name == "TysonScene1")
+            {
+                SceneManager.LoadScene("TysonGameplay");
+                gameObject.SetActive(false);
+            }
+
         }
     }
 }

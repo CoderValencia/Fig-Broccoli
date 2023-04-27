@@ -8,7 +8,15 @@ public class DropOff : MonoBehaviour
 {
     public bool dropOffArea;
 
-  
+    public int pickUpCount;
+
+    private void Update()
+    {
+        if (pickUpCount == 5)
+        {
+            Debug.Log(" Everything collected");
+        }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
