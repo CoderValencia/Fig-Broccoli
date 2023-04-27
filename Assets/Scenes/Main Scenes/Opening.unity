@@ -2013,15 +2013,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7299994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.2200003
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4435,38 +4435,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
-    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2863792360513927175, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
-    - target: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
-    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2863792360513927175, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
-    - target: {fileID: 3211285780510599338, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 3211285780617261846, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
       propertyPath: m_Name
       value: DialoguePanel

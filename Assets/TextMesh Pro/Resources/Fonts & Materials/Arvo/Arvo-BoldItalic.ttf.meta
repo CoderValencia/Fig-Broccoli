@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ef785e3170f3815419fe23953d215178
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Arvo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d7d217e7ac1ef32468e22ffd41d354c9, type: 3}
+  - {fileID: 12800000, guid: 8e9ef03592d99594bb59470f685441b8, type: 3}
+  - {fileID: 12800000, guid: 0994a9cf383596f4fb252dff8c42cfda, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
