@@ -90,6 +90,10 @@ public class DialogueArea : MonoBehaviour
             {
                 SceneManager.LoadScene("TysonScene1");
             }
+            else if (SceneManager.GetActiveScene().name == "TysonScene2")
+            {
+                SceneManager.LoadScene("WinScene");
+            }
 
 
         }

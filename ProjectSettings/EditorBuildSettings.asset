@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scenes/TysonScene2.unity
     guid: 425091af5867d6a49a2ae4ecb3e22d9a
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: c682a0f578049ba45a08aa04a4748d03
   m_configObjects: {}

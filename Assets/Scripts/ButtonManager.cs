@@ -9,4 +9,8 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Opening");
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 }
