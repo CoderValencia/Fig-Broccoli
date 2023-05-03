@@ -3,6 +3,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float moveSpeed;
+    public float turnSpeed;
     public Transform orientation;
 
     public float groundDrag;
@@ -75,7 +76,7 @@ public class Movement : MonoBehaviour
         {
             readyToJump = false;
 
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
+          // rb.constraints = RigidbodyConstraints.FreezeRotation;
             Jump();
            
 
@@ -83,7 +84,7 @@ public class Movement : MonoBehaviour
         }
         else if (readyToJump && grounded) {
 
-            rb.constraints = RigidbodyConstraints.FreezeRotation ;
+            //rb.constraints = RigidbodyConstraints.FreezeRotation ;
         }
        
     }
@@ -97,42 +98,12 @@ public class Movement : MonoBehaviour
         //on ground
         if (grounded)
         {
-            if (Input.GetKey(KeyCode.S))
-            {
-                anim.Play("MoveDown");
-                moveDirection = -orientation.forward * verticalInput + orientation.right * horizontalInput;
-                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
-            }
+            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * verticalInput);
 
+            transform.Translate(Vector3.right* turnSpeed * horizontalInput * Time.deltaTime);
 
-            if (Input.GetKey(KeyCode.W))
-            {
-                anim.Play("MoveUp");
-                moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
-
-            }
-
-            if (Input.GetKey(KeyCode.A))
-            {
-                anim.Play("MoveLeft");
-                moveDirection = new Vector3(-1, 0, 0);
-
-                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
-
-            }
-
-            if (Input.GetKey(KeyCode.D))
-            {
-                anim.Play("MoveRight");
-                moveDirection = new Vector3(1, 0, 0);
-
-                rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
-
-            }
-
-
-            //rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            Debug.Log(verticalInput);
+            Debug.Log(horizontalInput);
 
         }
         else if (!grounded)
@@ -200,7 +171,7 @@ public class Movement : MonoBehaviour
         readyToJump= true;
         if (grounded)
         {
-            rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
+            //rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
         }
        
 

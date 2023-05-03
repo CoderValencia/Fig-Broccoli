@@ -163,6 +163,8 @@ MonoBehaviour:
   dropUpwardForce: 0
   equipped: 0
   inArea: 0
+  dropOffComplete: 0
+  dropOffItemsCount: 0
 --- !u!4 &93344582
 Transform:
   m_ObjectHideFlags: 0
@@ -1443,6 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropOffArea: 0
+  pickUpCount: 0
 --- !u!1 &1517352109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
+  m_ShowCameraFrustum: 0
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
@@ -2112,6 +2115,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3379914797132462232, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
+      propertyPath: m_AvoidObstacles
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462234, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_Follow
       value: 
@@ -2126,15 +2133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.962
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3379914797132462235, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2193,6 +2200,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1303803958, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600926195, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536521026031038336, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536521026031038336, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536521026031038336, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4536521026031038338, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_RootOrder
       value: 4
