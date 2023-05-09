@@ -1845,13 +1845,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaVisible: 0
   inkJson: {fileID: 4900000, guid: d0ffb26c307371c4084e34921afc5b83, type: 3}
+  dialogueIsPlaying: 0
   dialogueText: {fileID: 492079689}
   dialoguePrompt: {fileID: 1300658716}
   dialogueBox: {fileID: 1323176755}
-  lines:
-  - Hi, I'm a Cube
-  - Bye
-  textSpeed: 0.1
 --- !u!65 &1831532633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2329,10 +2326,6 @@ PrefabInstance:
     - target: {fileID: 1600926195, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536521026031038336, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
-      propertyPath: m_Mass
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4536521026031038338, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_RootOrder
