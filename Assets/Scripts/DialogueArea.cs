@@ -3,25 +3,45 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Ink.Runtime;
 
 public class DialogueArea : MonoBehaviour
 {
     public bool areaVisible;
 
+    public TextAsset inkJson;
+
+    private Story currentStory;
+    public bool dialogueIsPlaying;
+
+
+
+
     public TextMeshProUGUI dialogueText;
-    public string[] lines;
-    public float textSpeed;
+    public TextMeshProUGUI dialoguePrompt;
+    public GameObject dialogueBox;
 
-    private int index;
+   
 
-     void Update()
+    private void Start()
     {
-        if(Input.GetMouseButtonDown(0))
+        areaVisible = true;
+        dialoguePrompt.gameObject.SetActive(false);
+        dialogueBox.SetActive(false);
+       dialogueIsPlaying = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            if(dialogueText.text == lines[index])
-            {
-                NextLine();
-            }
+            EnterDialogueMode(inkJson);
+           
+        }
+        if (dialogueBox == true && Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Mouse clicked");
+            ContinueStory();
         }
     }
 
@@ -29,70 +49,58 @@ public class DialogueArea : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Player is inside talking space");
-            areaVisible = true;
-            dialogueText.text = string.Empty;
-            StartDialogue();
+            Debug.Log("Player is in talking space");
+            
+            dialoguePrompt.gameObject.SetActive(true);
+           
+
 
         }
     }
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.tag == "Player") {
-            Debug.Log("Player left talking space");
-            areaVisible = false;
 
-        }
+        Debug.Log("Player left talking space");
+        dialoguePrompt.gameObject.SetActive(false);
+       
+
+
 
     }
-    void StartDialogue()
-    {
-        index = 0;
-        StartCoroutine(TypeDialogue());
-    }
 
-    IEnumerator TypeDialogue()
+    public void EnterDialogueMode(TextAsset inkJson)
     {
+        currentStory = new Story(inkJson.text);
+        dialogueBox.SetActive(true);
+        dialogueIsPlaying = true;
+        Debug.Log("Dialgoue Box opened");
 
-        foreach (char c in lines[index].ToCharArray())
+        if (currentStory.canContinue)
         {
-            dialogueText.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }
-
-
-    }
-
-    void NextLine()
-    {
-        if (index < lines.Length -1) 
-        {
-            index++;
-            dialogueText.text = String.Empty;
-            StartCoroutine(TypeDialogue());
-        
+            dialogueText.text = currentStory.Continue();
         }
         else
         {
-            if (SceneManager.GetActiveScene().name == "TysonScene1")
-            {
-                SceneManager.LoadScene("TysonGameplay");
-                gameObject.SetActive(false);
-            }
-            else if (SceneManager.GetActiveScene().name == "Opening")
-                {
-                SceneManager.LoadScene("BroccoliCapture");
-            }
-            else if (SceneManager.GetActiveScene().name == "BroccoliCapture")
-            {
-                SceneManager.LoadScene("TysonScene1");
-            }
-            else if (SceneManager.GetActiveScene().name == "TysonScene2")
-            {
-                SceneManager.LoadScene("WinScene");
-            }
-
-
+            ExitDialogue();
         }
     }
+    void ExitDialogue()
+    {
+        dialogueIsPlaying = false;
+        dialogueBox.SetActive(false) ;
+        dialogueText.text = "";
+    }
+
+    void ContinueStory()
+    {
+        if (currentStory.canContinue)
+        {
+            dialogueText.text = currentStory.Continue();
+        }
+        else
+        {
+            ExitDialogue();
+        }
+    }
+
 }

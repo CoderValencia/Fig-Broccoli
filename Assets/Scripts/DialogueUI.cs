@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
-    public GameObject DialoguePanel;
+    //public GameObject DialoguePanel;
     public DialogueArea dialogueArea;
 
    
@@ -18,24 +18,24 @@ public class DialogueUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name != "BroccoliCapture")
-        {
-            if (dialogueArea.areaVisible == false)
-            {
-                DialoguePanel.SetActive(false);
-            }
+        //if (SceneManager.GetActiveScene().name != "BroccoliCapture")
+        //{
+        //    if (dialogueArea.areaVisible == false)
+        //    {
+        //        dialogueArea.dialogueBox.SetActive (false);
+        //    }
 
-            if (dialogueArea.areaVisible == true)
-            {
-                DialoguePanel.SetActive(true);
+        //    if (dialogueArea.areaVisible == true)
+        //    {
+        //        dialogueArea.dialogueBox.SetActive(false);
 
 
-            }
-        }
-        else
-        {
-            DialoguePanel.SetActive(true);
-        }
+        //    }
+        //}
+        //else
+        //{
+        //    dialogueArea.dialogueBox.SetActive(false);
+        //}
        
         
     }
