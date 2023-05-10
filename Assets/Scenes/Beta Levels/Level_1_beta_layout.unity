@@ -1452,6 +1452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74ff7790b0d0b504d85bc23c4a028eeb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74ff7790b0d0b504d85bc23c4a028eeb, type: 3}
 --- !u!4 &271091284 stripped
@@ -4060,8 +4064,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74ff7790b0d0b504d85bc23c4a028eeb, type: 3}
   m_PrefabInstance: {fileID: 271091283}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &779730894
-MeshCollider:
+--- !u!65 &779730897
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4070,10 +4074,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1953723390312084291, guid: 74ff7790b0d0b504d85bc23c4a028eeb, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.5637671, y: 1.5256377, z: 3.41156}
+  m_Center: {x: -0.00000029802322, y: 0.7628189, z: -0.00000059604645}
 --- !u!1 &804415893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5897740613950290487, guid: 05aea2da7e444914a816fa0b30e20813, type: 3}
@@ -7193,6 +7196,10 @@ PrefabInstance:
     - target: {fileID: 4536521026031038342, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_Center.z
       value: 0.03611803
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536521026031038343, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+      propertyPath: jumpForce
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4536521026031038349, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_Name
@@ -10821,6 +10828,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_trash_bin
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 221422f7266ae3249b686bbfb5989c70, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 221422f7266ae3249b686bbfb5989c70, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 221422f7266ae3249b686bbfb5989c70, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 221422f7266ae3249b686bbfb5989c70, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -11271,6 +11290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9f63aad52e45bf43bffca76118f0e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9f63aad52e45bf43bffca76118f0e1c, type: 3}
 --- !u!4 &2061265093 stripped
@@ -11278,8 +11301,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c9f63aad52e45bf43bffca76118f0e1c, type: 3}
   m_PrefabInstance: {fileID: 2061265092}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2061265096
-MeshCollider:
+--- !u!65 &2061265099
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11288,10 +11311,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2102965883132702965, guid: c9f63aad52e45bf43bffca76118f0e1c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.3138137, y: 3.6067486, z: 2.198894}
+  m_Center: {x: 0.0000006556511, y: 1.8033743, z: 0.000014662743}
 --- !u!1 &2064183058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3117298314412318948, guid: 05aea2da7e444914a816fa0b30e20813, type: 3}
@@ -11679,7 +11701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2107965405}
   - component: {fileID: 2107965406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
