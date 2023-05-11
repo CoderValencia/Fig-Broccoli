@@ -9,6 +9,7 @@ public class DropOff : MonoBehaviour
 
     private void Update()
     {
+       
         if (pickUpCount == 5)
         {
             SceneManager.LoadScene("TysonScene2");

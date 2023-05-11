@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using System.Linq;
+using System.Collections.Generic;
 
 public class DialogueArea : MonoBehaviour
 {
@@ -17,17 +18,20 @@ public class DialogueArea : MonoBehaviour
     public GameObject dialogueBox;
 
 
+ 
+    public TextMeshProUGUI speakerName;
+    public Animator portraitAnim;
+
+
+    Scene currentScene;
+
+    const string SPEAKER_TAG = "speaker";
+
     private void Start()
     {
         areaVisible = true;
-        if (dialoguePrompt != null)
-        {
-            dialoguePrompt.gameObject.SetActive(false);
-        }
-        else if (dialogueBox != null)
-        {
-            dialoguePrompt.text = "";
-        }
+
+        dialoguePrompt.gameObject.SetActive(false);
         dialogueBox.SetActive(false);
         dialogueIsPlaying = false;
 
@@ -37,7 +41,7 @@ public class DialogueArea : MonoBehaviour
     void Update()
     {
       
-        if (Input.GetKeyDown(KeyCode.E) )
+        if (Input.GetKeyDown(KeyCode.E) && dialoguePrompt.gameObject.activeInHierarchy == true )
         {
             EnterDialogueMode(inkJson);
            
@@ -81,6 +85,7 @@ public class DialogueArea : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
+            HandleTags(currentStory.currentTags);
         }
         else
         {
@@ -104,6 +109,36 @@ public class DialogueArea : MonoBehaviour
         {
             ExitDialogue();
         }
+    }
+
+    void HandleTags(List<string> currentTags)
+    {
+        foreach (string tag in currentTags)
+        {
+            string[] splitTag = tag.Split(":");
+            if (splitTag.Length != 2)
+            {
+                Debug.Log(splitTag.Length);
+                Debug.LogError("Tag could not be parsed:" + tag);
+            }
+            string tagKey = splitTag[0];
+            string tagValue = splitTag[1];
+            speakerName.text = tagValue;
+            switch (tagValue)
+            {
+                case "Broccoli":
+                    portraitAnim.Play("Broccoli");
+                    break;
+                case "Fig":
+                    portraitAnim.Play("Fig");
+                    break;
+                default:
+                    break;
+
+            }
+
+        }
+
     }
 
 }

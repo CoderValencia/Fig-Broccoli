@@ -9,8 +9,7 @@ public class PickUp : MonoBehaviour
 
     public DropOff dropOff;
 
-    public float pickUpRange;
-    public float dropForwardForce, dropUpwardForce;
+    
 
     public bool equipped;
 
@@ -54,9 +53,9 @@ public class PickUp : MonoBehaviour
             
         }
 
-        if (SceneManager.GetActiveScene().name == "TysonGameplay" && dropOffItemsCount == 1)
+        if (SceneManager.GetActiveScene().name == "Tutorial" && dropOffItemsCount == 1)
         {
-            SceneManager.LoadScene("TysonGameplayAfterPiano");
+            SceneManager.LoadScene("Broccoli_Capture");
         }
 
 

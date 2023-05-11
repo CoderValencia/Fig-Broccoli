@@ -73,8 +73,14 @@ public class CutsceneScript : MonoBehaviour
         dialogueText.text = "";
         switch (currentScene.name)
         {
-            case "Opening":
-                SceneManager.LoadScene("TysonGameplay");
+            case "Opening_Beta":
+                SceneManager.LoadScene("Tutorial_Opening");
+                break;
+            case "Tutorial_Opening":
+                SceneManager.LoadScene("Tutorial");
+                break;
+            case "Broccoli_Capture":
+                SceneManager.LoadScene("Level_1_beta_layout");
                 break;
             default: 
                 break;
