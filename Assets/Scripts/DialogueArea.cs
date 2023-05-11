@@ -4,43 +4,46 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
+using System.Linq;
 
 public class DialogueArea : MonoBehaviour
 {
     public bool areaVisible;
-
     public TextAsset inkJson;
-
     private Story currentStory;
     public bool dialogueIsPlaying;
-
-
-
-
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI dialoguePrompt;
     public GameObject dialogueBox;
 
-   
 
     private void Start()
     {
         areaVisible = true;
-        dialoguePrompt.gameObject.SetActive(false);
+        if (dialoguePrompt != null)
+        {
+            dialoguePrompt.gameObject.SetActive(false);
+        }
+        else if (dialogueBox != null)
+        {
+            dialoguePrompt.text = "";
+        }
         dialogueBox.SetActive(false);
-       dialogueIsPlaying = false;
+        dialogueIsPlaying = false;
+
+        
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+      
+        if (Input.GetKeyDown(KeyCode.E) )
         {
             EnterDialogueMode(inkJson);
            
         }
         if (dialogueBox == true && Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Mouse clicked");
             ContinueStory();
         }
     }
@@ -60,7 +63,7 @@ public class DialogueArea : MonoBehaviour
     private void OnTriggerExit(Collider collision)
     {
 
-        Debug.Log("Player left talking space");
+       
         dialoguePrompt.gameObject.SetActive(false);
        
 
@@ -73,7 +76,7 @@ public class DialogueArea : MonoBehaviour
         currentStory = new Story(inkJson.text);
         dialogueBox.SetActive(true);
         dialogueIsPlaying = true;
-        Debug.Log("Dialgoue Box opened");
+
 
         if (currentStory.canContinue)
         {
