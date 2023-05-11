@@ -433,7 +433,7 @@ MonoBehaviour:
   moveSpeed: 5
   turnSpeed: 45
   groundDrag: 1
-  jumpForce: 10
+  jumpForce: 15
   jumpCooldown: 0.25
   readyToJump: 1
   playerHeight: 1.6

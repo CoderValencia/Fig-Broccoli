@@ -96,7 +96,7 @@ public class Movement : MonoBehaviour
     {
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        animator.Play("Fig_Jump");
+        animator.Play("FasterJump");
     }
 
     private void ResetJump()

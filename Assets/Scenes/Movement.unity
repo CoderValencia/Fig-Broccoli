@@ -1410,7 +1410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798e26b9748ad8d46a7c95dece1c9e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueArea: {fileID: 1831532632}
+  dialogueArea: {fileID: 0}
 --- !u!4 &1435031234
 Transform:
   m_ObjectHideFlags: 0
@@ -1718,7 +1718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1831532631}
   - component: {fileID: 1831532633}
-  - component: {fileID: 1831532632}
+  - component: {fileID: 1831532634}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -1743,24 +1743,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1831532632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831532630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b819c88ffe8b494394884cefea8f20c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  areaVisible: 0
-  inkJson: {fileID: 4900000, guid: d0ffb26c307371c4084e34921afc5b83, type: 3}
-  dialogueIsPlaying: 0
-  dialogueText: {fileID: 492079689}
-  dialoguePrompt: {fileID: 1300658716}
-  dialogueBox: {fileID: 1323176755}
 --- !u!65 &1831532633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1774,6 +1756,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1831532634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831532630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b819c88ffe8b494394884cefea8f20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaVisible: 0
+  inkJson: {fileID: 4900000, guid: 4740cf273aabfb048832e75a9bd4fd14, type: 3}
+  dialogueIsPlaying: 0
+  dialogueText: {fileID: 492079689}
+  dialoguePrompt: {fileID: 1300658716}
+  dialogueBox: {fileID: 1323176755}
 --- !u!1 &1906801744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,10 +2213,6 @@ PrefabInstance:
     - target: {fileID: 4536521026031038338, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536521026031038343, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
-      propertyPath: jumpForce
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4536521026031038349, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
       propertyPath: m_Name
