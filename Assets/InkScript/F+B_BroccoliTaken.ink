@@ -20,7 +20,9 @@ Smells like I found more road snacks! #speaker:Broccoli
 
 Wait, Broc, don’t! #speaker:Fig
 
-BROCCOLI!!! #speaker:Fig
+[SNAP!] Broccoli is trapped in a cage. Fig reaches out for him, but in a flash, humans throw the cage into a white van and speed away.
+
+Broccoli!!! #speaker:Fig
 
 I can’t believe this! The humans got him, they’re gonna to eat him! #speaker:Fig
 

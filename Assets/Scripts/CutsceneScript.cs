@@ -80,7 +80,7 @@ public class CutsceneScript : MonoBehaviour
                 SceneManager.LoadScene("Tutorial");
                 break;
             case "Broccoli_Capture":
-                SceneManager.LoadScene("Level_1_beta_layout");
+                SceneManager.LoadScene("Level_1_beta_layout_Tyson");
                 break;
             case "Level_1_beta_layout_Tyson_Done":
                 SceneManager.LoadScene("WinScene");

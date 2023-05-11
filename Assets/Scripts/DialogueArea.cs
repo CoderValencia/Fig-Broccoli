@@ -34,8 +34,9 @@ public class DialogueArea : MonoBehaviour
         dialoguePrompt.gameObject.SetActive(false);
         dialogueBox.SetActive(false);
         dialogueIsPlaying = false;
+   
+         
 
-        
     }
 
     void Update()
