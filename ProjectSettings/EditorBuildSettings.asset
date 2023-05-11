@@ -21,8 +21,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Beta Levels/Broccoli_Capture.unity
     guid: 5c39caae5a1936b44bf8dd3c14c0e77a
   - enabled: 1
+    path: Assets/Scenes/Beta Levels/Level_1_beta_layout_Tyson.unity
+    guid: 249597f6368500448b900b311ab06832
+  - enabled: 1
     path: Assets/Scenes/Beta Levels/Level_1_beta_layout.unity
     guid: 8607f8a15ef1e0947aae4737c464f23f
+  - enabled: 1
+    path: Assets/Scenes/Beta Levels/Level_1_beta_layout_Tyson_Done.unity
+    guid: 26e5deca0fe64f74491407661fb7a9a9
   - enabled: 1
     path: Assets/Scenes/Beta Levels/Level_2_beta_layout.unity
     guid: cc70db573ac096443aff8a76ae9bcfb0

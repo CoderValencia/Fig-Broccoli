@@ -8,6 +8,8 @@ TagManager:
   - Quest Item
   - Movable
   - Searchable
+  - Keys
+  - Piano
   layers:
   - Default
   - TransparentFX

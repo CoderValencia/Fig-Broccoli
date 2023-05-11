@@ -30,7 +30,7 @@ public class DialogueArea : MonoBehaviour
     private void Start()
     {
         areaVisible = true;
-
+        currentScene = SceneManager.GetActiveScene();
         dialoguePrompt.gameObject.SetActive(false);
         dialogueBox.SetActive(false);
         dialogueIsPlaying = false;
@@ -97,6 +97,17 @@ public class DialogueArea : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueBox.SetActive(false) ;
         dialogueText.text = "";
+
+        switch (currentScene.name)
+        {
+            case "Level_1_beta_layout_Tyson":
+                SceneManager.LoadScene("Level_1_beta_layout");
+                break;
+            default:
+                break;
+
+        }
+        
     }
 
     void ContinueStory()
@@ -104,10 +115,12 @@ public class DialogueArea : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
+            HandleTags(currentStory.currentTags);
         }
         else
         {
             ExitDialogue();
+            
         }
     }
 
@@ -124,6 +137,7 @@ public class DialogueArea : MonoBehaviour
             string tagKey = splitTag[0];
             string tagValue = splitTag[1];
             speakerName.text = tagValue;
+            Debug.Log(tagValue);
             switch (tagValue)
             {
                 case "Broccoli":
@@ -131,6 +145,9 @@ public class DialogueArea : MonoBehaviour
                     break;
                 case "Fig":
                     portraitAnim.Play("Fig");
+                    break;
+                case "Tyson":
+                    portraitAnim.Play("Tyson");
                     break;
                 default:
                     break;

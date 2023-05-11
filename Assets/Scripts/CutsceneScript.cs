@@ -82,6 +82,9 @@ public class CutsceneScript : MonoBehaviour
             case "Broccoli_Capture":
                 SceneManager.LoadScene("Level_1_beta_layout");
                 break;
+            case "Level_1_beta_layout_Tyson_Done":
+                SceneManager.LoadScene("WinScene");
+                break;
             default: 
                 break;
 
@@ -121,6 +124,9 @@ public class CutsceneScript : MonoBehaviour
                     break;
                 case "Fig":
                     portraitAnim.Play("Fig");
+                    break;
+                case "Tyson":
+                    portraitAnim.Play("Tyson");
                     break;
                 default: 
                     break;
