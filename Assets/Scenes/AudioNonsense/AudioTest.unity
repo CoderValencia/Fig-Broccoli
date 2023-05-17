@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &300925479 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4796163816734636, guid: 1305720c8c0a1794eb921f1a69df2ec0, type: 3}
-  m_PrefabInstance: {fileID: 356486815}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &356486815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,148 +358,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1546964439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1546964440}
-  - component: {fileID: 1546964441}
-  m_Layer: 0
-  m_Name: Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1546964440
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546964439}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 300925479}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1546964441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546964439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65c3a80a1a35884b9a0bf632cd09354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  internals:
-    soundEventsExpand: 1
-    soundTriggerPart:
-    - expandSoundEvent: 1
-      soundEvent: {fileID: 11400000, guid: 53acae73879ec174c8f43efd62dea9f3, type: 2}
-      soundEventModifier:
-        volumeDecibel: 0
-        volumeRatio: 1
-        pitchSemitone: 0
-        pitchRatio: 1
-        delay: 0
-        increase2D: 0
-        intensity: 1
-        reverbZoneMixDecibel: 0
-        reverbZoneMixRatio: 1
-        startPosition: 0
-        reverse: 0
-        stereoPan: 0
-        polyphony: 1
-        distanceScale: 1
-        distortionIncrease: 0
-        fadeInLength: 0
-        fadeInShape: 2
-        fadeOutLength: 0
-        fadeOutShape: -2
-        followPosition: 1
-        bypassReverbZones: 0
-        bypassVoiceEffects: 0
-        bypassListenerEffects: 0
-        volumeUse: 0
-        pitchUse: 0
-        delayUse: 0
-        increase2DUse: 0
-        intensityUse: 0
-        reverbZoneMixUse: 0
-        startPositionUse: 0
-        reverseUse: 0
-        stereoPanUse: 0
-        polyphonyUse: 0
-        distanceScaleUse: 0
-        distortionIncreaseUse: 0
-        fadeInLengthUse: 0
-        fadeInShapeUse: 0
-        fadeOutLengthUse: 0
-        fadeOutShapeUse: 0
-        followPositionUse: 0
-        bypassReverbZonesUse: 0
-        bypassVoiceEffectsUse: 0
-        bypassListenerEffectsUse: 0
-      expandModifier: 1
-      soundTriggerTodo:
-        onEnableUse: 0
-        onDisableUse: 0
-        onStartUse: 1
-        onDestroyUse: 1
-        onTriggerEnterUse: 0
-        onTriggerExitUse: 0
-        onTriggerEnter2DUse: 0
-        onTriggerExit2DUse: 0
-        onCollisionEnterUse: 0
-        onCollisionExitUse: 0
-        onCollisionEnter2DUse: 0
-        onCollisionExit2DUse: 0
-        onMouseEnterUse: 0
-        onMouseExitUse: 0
-        onMouseDownUse: 0
-        onMouseUpUse: 0
-        onEnableAction: 0
-        onDisableAction: 1
-        onStartAction: 0
-        onDestroyAction: 1
-        onTriggerEnterAction: 0
-        onTriggerExitAction: 1
-        onTriggerEnter2DAction: 0
-        onTriggerExit2DAction: 1
-        onCollisionEnterAction: 0
-        onCollisionExitAction: 1
-        onCollisionEnter2DAction: 0
-        onCollisionExit2DAction: 1
-        onMouseEnterAction: 0
-        onMouseExitAction: 1
-        onMouseDownAction: 0
-        onMouseUpAction: 1
-      expandTrigger: 1
-      triggerTagUse: 0
-      triggerTags:
-      - Untagged
-      collisionVelocityToIntensity: 0
-      collisionTagUse: 0
-      collisionTags:
-      - Untagged
-    soundParameterDistanceScale:
-      internals:
-        type: 10
-        updateMode: 1
-        valueFloat: 1
-        valueInt: 0
-        valueBool: 0
 --- !u!1001 &1884534076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,3 +415,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6fa11ce5401989478a8d87a5f63267c, type: 3}
+--- !u!1001 &8806553648916398661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8806553649124164240, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_Name
+      value: MainMenuMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806553649124164242, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90cafcff74d723e4eb2ce748ce385214, type: 3}
