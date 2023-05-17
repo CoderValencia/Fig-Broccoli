@@ -9,8 +9,7 @@ public class PickUp : MonoBehaviour
 
     public DropOff dropOff;
 
-    public float pickUpRange;
-    public float dropForwardForce, dropUpwardForce;
+    
 
     public bool equipped;
 
@@ -19,15 +18,21 @@ public class PickUp : MonoBehaviour
     public bool dropOffComplete;
 
     public int dropOffItemsCount;
+    public int keyCount;
 
-  
+    public KeysScript keysScript;
+
+    public bool PianoDroppedOff;
+
 
     private void Start()
     {
         dropOffComplete = false;
         dropOffItemsCount = 0;
         dropOff.pickUpCount = 0;
-       
+        PianoDroppedOff = false;
+
+
     }
 
     private void Update()
@@ -50,13 +55,15 @@ public class PickUp : MonoBehaviour
         {
 
             DropOffFunction();
-            
-            
+           
+
+
+
         }
 
-        if (SceneManager.GetActiveScene().name == "TysonGameplay" && dropOffItemsCount == 1)
+        if (SceneManager.GetActiveScene().name == "Tutorial" && dropOffItemsCount == 1)
         {
-            SceneManager.LoadScene("TysonGameplayAfterPiano");
+            SceneManager.LoadScene("Broccoli_Capture");
         }
 
 
@@ -73,6 +80,13 @@ public class PickUp : MonoBehaviour
         equipped = true;
         coll.isTrigger = true;
         dropOffComplete = true;
+        if (this.gameObject.tag == "Keys")
+        {
+            keysScript.totalKeys++;
+
+        }
+
+
     }
 
     private void DropOffFunction()
@@ -86,10 +100,15 @@ public class PickUp : MonoBehaviour
         equipped = false;
         coll.isTrigger = true;
         dropOffItemsCount++;
+        if (this.gameObject.tag == "Piano")
+        {
+            PianoDroppedOff = true;
+        }
+       
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {

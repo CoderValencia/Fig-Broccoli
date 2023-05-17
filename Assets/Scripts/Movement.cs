@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -17,6 +16,7 @@ public class Movement : MonoBehaviour
     public  LayerMask ground;
     bool grounded;
 
+    public Animator animator;
     float horizontalInput;
     float verticalInput;
 
@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
         PlayerInput();
         Move();
-       
+    
 
         if (grounded) 
         {
@@ -69,12 +69,23 @@ public class Movement : MonoBehaviour
         if (grounded)
         {
             transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * verticalInput);
+
             transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+            if (verticalInput != 0 && grounded) {
+                animator.SetBool("isMoving", true);
+            }
+            else if (verticalInput== 0 && grounded)
+            {
+                animator.SetBool("isMoving", false);
+            }
+       
   
         }
         else if (!grounded)
         {
             transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * verticalInput);
+           
+            
             rb.freezeRotation= true;
         }
     
@@ -84,10 +95,12 @@ public class Movement : MonoBehaviour
     {
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        animator.Play("FasterJump");
     }
 
     private void ResetJump()
     {
         readyToJump= true;
+        //animator.SetBool("isJumping", false);
     }
 }

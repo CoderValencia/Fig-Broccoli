@@ -5,7 +5,7 @@ public class ButtonManager : MonoBehaviour
 {
    public void StartGame()
     {
-        SceneManager.LoadScene("Opening");
+        SceneManager.LoadScene("Opening_Beta");
     }
     public void MainMenu()
     {
