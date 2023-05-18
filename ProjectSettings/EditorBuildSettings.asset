@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Beta Levels/Level_1_beta_layout_Tyson_Done.unity
     guid: 26e5deca0fe64f74491407661fb7a9a9
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Level_2_beta_layout.unity
+    path: Assets/Scenes/Beta Levels/Level_2_prototype.unity
     guid: cc70db573ac096443aff8a76ae9bcfb0
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
