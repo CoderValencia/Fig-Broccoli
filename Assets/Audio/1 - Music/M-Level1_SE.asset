@@ -19,7 +19,7 @@ MonoBehaviour:
       expandTimeline: 1
       expandPreview: 0
       expandSettings: 1
-      expandTriggerOnPlay: 0
+      expandTriggerOnPlay: 1
       expandTriggerOnStop: 0
       expandTriggerOnTail: 1
       expandAllSoundTag: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
         startPosition: 0
         reverse: 0
         stereoPan: 0
-        polyphony: 1
+        polyphony: 2
         distanceScale: 1
         distortionIncrease: 0
         fadeInLength: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
       intensityRecord: 0
       intensityDebugResolution: 100
       intensityDebugValueList: []
-      triggerOnPlayEnable: 0
+      triggerOnPlayEnable: 1
       triggerOnPlaySoundEvents:
       - {fileID: 0}
       triggerOnPlayWhichToPlay: 0
@@ -126,9 +126,9 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 11400000, guid: cc2b45c069083664ea437789b080bc03, type: 2}
+      - {fileID: 11400000}
       triggerOnTailWhichToPlay: 0
-      triggerOnTailLength: 9.142858
+      triggerOnTailLength: 3.4285717
       triggerOnTailBpm: 105
       triggerOnTailBeatLength: 4
       soundTagEnable: 0
