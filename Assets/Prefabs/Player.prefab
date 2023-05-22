@@ -1,5 +1,89 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &994054251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994054255}
+  - component: {fileID: 994054254}
+  - component: {fileID: 994054253}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &994054255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994054251}
+  m_LocalRotation: {x: 0.12048989, y: 0.01272117, z: -0.00047849352, w: 0.9926329}
+  m_LocalPosition: {x: 0, y: 2.7800002, z: -11.919998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4536521026031038338}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 13.84, y: 1.484, z: 0.125}
+--- !u!20 &994054254
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994054251}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.18867922, g: 0.16286932, b: 0.16286932, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
+  orthographic: 0
+  orthographic size: 10
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &994054253
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994054251}
+  m_Enabled: 1
 --- !u!1 &1303803957
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +483,7 @@ Transform:
   - {fileID: 1303803958}
   - {fileID: 4536521025771465364}
   - {fileID: 1600926195}
+  - {fileID: 994054255}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -416,7 +501,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &4536521026031038343
 MonoBehaviour:
@@ -433,10 +518,10 @@ MonoBehaviour:
   moveSpeed: 5
   turnSpeed: 45
   groundDrag: 1
-  jumpForce: 15
+  jumpForce: 16
   jumpCooldown: 0.25
   readyToJump: 1
-  playerHeight: 1.6
+  playerHeight: 1.9
   ground:
     serializedVersion: 2
     m_Bits: 64
@@ -452,9 +537,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.48751217
-  m_Height: 1.4980297
+  m_Height: 1.574853
   m_Direction: 2
-  m_Center: {x: 0.06, y: -0.41, z: -0.26}
+  m_Center: {x: 0.06, y: -0.41, z: 0.03611803}
 --- !u!1 &4536521026285904476
 GameObject:
   m_ObjectHideFlags: 0
