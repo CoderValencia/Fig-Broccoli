@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0038784477, g: 0.0065078693, b: 0.05331526, a: 1}
+  m_IndirectSpecularColor: {r: 0.0038784458, g: 0.0065078647, b: 0.05331525, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2082,6 +2082,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3211285780402029788, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00005340576
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211285780402029788, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 49
       objectReference: {fileID: 0}
@@ -2315,7 +2319,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211285780862508471, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 19
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510248997658298273, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -491
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510248997658298273, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342329618211754869, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -486
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342329618211754869, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
@@ -2764,17 +2784,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec8d28e5a4ea7a543aedffe788e4a839, type: 3}
   m_PrefabInstance: {fileID: 1001101807}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &835043962 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3211285780423468964, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-  m_PrefabInstance: {fileID: 560583993}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &877349278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14fbcf0bb3a46ed49a445dded631ba60, type: 3}
@@ -2816,8 +2825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798e26b9748ad8d46a7c95dece1c9e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialoguePanel: {fileID: 1363994446}
-  dialogueArea: {fileID: 942460819}
 --- !u!114 &942460819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2831,32 +2838,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   areaVisible: 0
-  dialogueText: {fileID: 835043962}
-  lines:
-  - '*Broccoli and Fig got some "snack" from the nearby trash can.*'
-  - "Broccoli: Perfect, now that we have some snacks for the road, I\u2019ll show
-    you the surprise.  "
-  - 'Fig: For the road?'
-  - '*Broccoli walks to the car and opens the door.*'
-  - "Broccoli: Ta-da! It\u2019s an abandoned car some humans left behind. I have
-    the keys!"
-  - "Broccoli: I\u2019ve been wanting to drive it, but it\u2019s a two raccoon job."
-  - "Broccoli: Now that I\u2019ve got you in my life, we can do this together!"
-  - "Broccoli: I\u2019ll press the bottom buttons that make it go and stop while
-    you steer! "
-  - "Fig: You must not got all the corn on your cob if you think I\u2019m getting
-    in that thing!"
-  - "Broccoli: Oh, come on, Figgy! This is my dream and I can only do it if you\u2026"
-  - "Broccoli:  *sniff sniff* What\u2019s that? "
-  - '*Broccoli smells something and walks over to the cat food/trap* '
-  - 'Broccoli:  *sniff* Smells like I found more road snacks! '
-  - "Fig: Wait, Broc, don\u2019t!"
-  - '*A van came by and took Broccoli away*'
-  - 'Fig: BROCCOLI!!!'
-  - "Fig: I can\u2019t believe this! "
-  - "Fig: The humans got him, they\u2019re gonna to eat him!"
-  - "Fig: I gotta find help! I\u2019ve got to save Broccoli!"
-  textSpeed: 0.03
+  inkJson: {fileID: 0}
+  dialogueIsPlaying: 0
+  dialogueText: {fileID: 0}
+  dialoguePrompt: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  speakerName: {fileID: 0}
+  portraitAnim: {fileID: 0}
 --- !u!65 &942460820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3664,11 +3652,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8471883146739891095, guid: b06197d487b17684280c210a8cc917e3, type: 3}
   m_PrefabInstance: {fileID: 544444700}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1363994446 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3211285780617261846, guid: fb0bb2e905a6e774d9258c66b519d584, type: 3}
-  m_PrefabInstance: {fileID: 560583993}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1363994447 stripped
 RectTransform:
