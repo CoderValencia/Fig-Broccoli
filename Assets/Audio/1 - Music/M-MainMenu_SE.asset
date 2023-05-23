@@ -44,7 +44,7 @@ MonoBehaviour:
         startPosition: 0
         reverse: 0
         stereoPan: 0
-        polyphony: 1
+        polyphony: 21
         distanceScale: 1
         distortionIncrease: 0
         fadeInLength: 0
@@ -126,10 +126,10 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 11400000, guid: cc2b45c069083664ea437789b080bc03, type: 2}
+      - {fileID: 11400000}
       triggerOnTailWhichToPlay: 0
-      triggerOnTailLength: 9.142858
-      triggerOnTailBpm: 105
+      triggerOnTailLength: 3.75
+      triggerOnTailBpm: 96
       triggerOnTailBeatLength: 4
       soundTagEnable: 0
       soundTagMode: 1
