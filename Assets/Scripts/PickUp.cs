@@ -91,7 +91,7 @@ public class PickUp : MonoBehaviour
 
     private void DropOffFunction()
     {
-        if (this.gameObject.tag == "Piano")
+        if (this.gameObject.tag != "Keys")
         {
             transform.SetParent(dropContainer);
             transform.localPosition = Vector3.zero;
