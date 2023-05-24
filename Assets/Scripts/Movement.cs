@@ -76,6 +76,8 @@ public class Movement : MonoBehaviour
             if (verticalInput != 0 && grounded) {
                 animator.SetBool("isMoving", true);
                 soundManager.walkFigCement.Play(transform);
+
+
             }
             else if (verticalInput== 0 && grounded)
             {

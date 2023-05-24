@@ -3,6 +3,7 @@ guid: 6bb543c90961ff242833f656baf8385c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
+<<<<<<< HEAD
   defaultReferences:
   - youDidIt: {instanceID: 0}
   - talkFig: {instanceID: 0}
@@ -19,6 +20,9 @@ MonoImporter:
   - piano3: {instanceID: 0}
   - piano4: {instanceID: 0}
   - piano5: {instanceID: 0}
+=======
+  defaultReferences: []
+>>>>>>> parent of 82cbc25 (hook up sound)
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
