@@ -73,6 +73,7 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
             if (verticalInput != 0 && grounded) {
                 animator.SetBool("isMoving", true);
+                SoundManager.instance.walkFigCement.Play(transform);
             }
             else if (verticalInput== 0 && grounded)
             {
