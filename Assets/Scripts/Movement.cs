@@ -75,10 +75,9 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
             if (verticalInput != 0 && grounded) {
                 animator.SetBool("isMoving", true);
-<<<<<<< HEAD
                 soundManager.walkFigCement.Play(transform);
-=======
->>>>>>> parent of 82cbc25 (hook up sound)
+
+
             }
             else if (verticalInput== 0 && grounded)
             {
