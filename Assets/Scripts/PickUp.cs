@@ -91,19 +91,19 @@ public class PickUp : MonoBehaviour
 
     private void DropOffFunction()
     {
-  
-
-        transform.SetParent(dropContainer);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
-        //transform.localScale = Vector3.one;
-        equipped = false;
-        coll.isTrigger = true;
-        dropOffItemsCount++;
         if (this.gameObject.tag == "Piano")
         {
+            transform.SetParent(dropContainer);
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.Euler(Vector3.zero);
+            equipped = false;
+            coll.isTrigger = true;
+            dropOffItemsCount++;
             PianoDroppedOff = true;
         }
+
+
+   
        
 
     }
