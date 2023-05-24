@@ -4,21 +4,21 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - youDidIt: {fileID: 11400000, guid: 3b9ad0c678b48c64eb9a06dd51042281, type: 2}
-  - talkFig: {fileID: 11400000, guid: a5a4f74c9e09e914bb09eafc531b28de, type: 2}
-  - talkBroccoli: {fileID: 11400000, guid: b0a068955fb154247974532247e4048f, type: 2}
-  - talkBird: {fileID: 11400000, guid: 7e227d4bcab50f94abc7c08558a328e5, type: 2}
-  - talkCat: {fileID: 11400000, guid: 86deeb254276c0240ba54de18f8444ec, type: 2}
-  - talkMouse: {fileID: 11400000, guid: 74d6ca77cbe555340addfac02b9bc8fe, type: 2}
-  - walkFigCement: {fileID: 11400000, guid: ebb28ac2d95fa2d449cd5c7aabd1a6ee, type: 2}
-  - walkFigGrass: {fileID: 11400000, guid: fc9eba7e2b9d1dc41b9e77849e33822f, type: 2}
-  - kidnapBroccoli: {fileID: 11400000, guid: 6857f01b43a026c45805769b27a09b9f, type: 2}
-  - pianoFull: {fileID: 11400000, guid: a06dd14316d4157409437bf36679ebf5, type: 2}
-  - piano1: {fileID: 11400000, guid: 7832fcf18c88bec4c85acf80e13dc054, type: 2}
-  - piano2: {fileID: 11400000, guid: 82f3dfd377cac5548bd200ea3f5814d8, type: 2}
-  - piano3: {fileID: 11400000, guid: bb6b7b8f27d1c44439b0eea59b07c5ac, type: 2}
-  - piano4: {fileID: 11400000, guid: 94724bbdbe43b2e49b3fd1049133f584, type: 2}
-  - piano5: {fileID: 11400000, guid: 1c2e933b9296af74db121d2a6f033ba7, type: 2}
+  - youDidIt: {instanceID: 0}
+  - talkFig: {instanceID: 0}
+  - talkBroccoli: {instanceID: 0}
+  - talkBird: {instanceID: 0}
+  - talkCat: {instanceID: 0}
+  - talkMouse: {instanceID: 0}
+  - walkFigCement: {instanceID: 0}
+  - walkFigGrass: {instanceID: 0}
+  - kidnapBroccoli: {instanceID: 0}
+  - pianoFull: {instanceID: 0}
+  - piano1: {instanceID: 0}
+  - piano2: {instanceID: 0}
+  - piano3: {instanceID: 0}
+  - piano4: {instanceID: 0}
+  - piano5: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
