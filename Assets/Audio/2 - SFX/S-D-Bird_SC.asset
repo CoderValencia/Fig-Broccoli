@@ -164,7 +164,7 @@ MonoBehaviour:
       pitchSemitone: 5.1
       pitchRatio: 1.3425728
       pitchRandomEnable: 1
-      pitchRandomRangeSemitoneBipolar: 2.5
+      pitchRandomRangeSemitoneBipolar: 5.9
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
       pitchIntensityLowRatio: 0.5
@@ -647,7 +647,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 1437d0577f8ee6044a0da85db86d32f7, type: 3}
-    - {fileID: 8300000, guid: 44ebcbe55a4572c4d8acf719441a46fc, type: 3}
-    - {fileID: 8300000, guid: cdde6b1e2598cfe4bb9cadd99bfa5450, type: 3}
-    - {fileID: 8300000, guid: 2e71965848c5d0f448fd22e8389eda65, type: 3}
+    - {fileID: 8300000, guid: 502636c0acbe34c4cafe68c69ff33a28, type: 3}
+    - {fileID: 8300000, guid: d47ddc2b5d743c2419bb64fda14a72b6, type: 3}
+    - {fileID: 8300000, guid: 8c93883d24efaea4dbcf0f4396c9adda, type: 3}
+    - {fileID: 8300000, guid: 73a5daa350e48ce49948925f9c88a55c, type: 3}
