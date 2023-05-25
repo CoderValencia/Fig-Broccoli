@@ -683,6 +683,11 @@ Transform:
   m_Father: {fileID: 515082825}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -177.05, z: 0}
+--- !u!4 &112991390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303803958, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2027733994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &122213222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,17 +1618,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3846893500490961268, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
   m_PrefabInstance: {fileID: 286619051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &286619054 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3585906580213349440, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
-  m_PrefabInstance: {fileID: 286619051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &286619055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5775634265116126073, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
@@ -3849,7 +3843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec8d28e5a4ea7a543aedffe788e4a839, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.64
+      value: -16.65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec8d28e5a4ea7a543aedffe788e4a839, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3924,8 +3918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 683959053}
-  player: {fileID: 0}
-  itemContainer: {fileID: 0}
+  player: {fileID: 819174846}
+  itemContainer: {fileID: 112991390}
   dropContainer: {fileID: 309333171}
   dropOff: {fileID: 122213224}
   equipped: 0
@@ -4505,6 +4499,11 @@ BoxCollider:
 --- !u!1 &819174842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4536521026031038349, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2027733994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &819174846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4536521026031038338, guid: bdd238f833d669a45861985dffacc1b8, type: 3}
   m_PrefabInstance: {fileID: 2027733994}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &829532020
@@ -6208,7 +6207,7 @@ MonoBehaviour:
   dialogueText: {fileID: 286619052}
   dialoguePrompt: {fileID: 1308818595}
   dialogueBox: {fileID: 286619055}
-  speakerName: {fileID: 286619054}
+  speakerName: {fileID: 0}
   portraitAnim: {fileID: 286619053}
 --- !u!114 &1220038883
 MonoBehaviour:
