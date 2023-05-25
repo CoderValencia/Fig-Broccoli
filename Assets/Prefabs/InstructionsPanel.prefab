@@ -1207,7 +1207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.479736, y: 291.74545}
+  m_AnchoredPosition: {x: -35.479736, y: 223.9}
   m_SizeDelta: {x: 503.3544, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6074154649906022350
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Talk to the pigeon
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
   m_sharedMaterial: {fileID: 2863792360513927175, guid: bdc67be5e718e444f95f9fd613dc1e5d, type: 2}
