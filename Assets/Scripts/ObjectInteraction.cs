@@ -21,6 +21,7 @@ public class ObjectInteraction : MonoBehaviour
     public GameObject canvasHasInteracted;
 
 
+
     // Start is called before the first frame update
 
     public void OnTriggerEnter(Collider other)

@@ -227,7 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24599003}
   - component: {fileID: 24599004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,8 +260,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.3294926, y: 7.1774073, z: 4.425538}
-  m_Center: {x: -3.3660467, y: 1.6241004, z: 3.1932023}
+  m_Size: {x: 6.3294926, y: 7.1774073, z: 4.488409}
+  m_Center: {x: -3.3660467, y: 1.6241004, z: 3.224644}
 --- !u!1001 &33395240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46227365}
   - component: {fileID: 46227366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 102462565}
   - component: {fileID: 102462564}
   - component: {fileID: 102462563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 105682488}
   - component: {fileID: 105682489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 172514794}
   - component: {fileID: 172514795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_vent_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1347,7 @@ GameObject:
   - component: {fileID: 278970217}
   - component: {fileID: 278970216}
   - component: {fileID: 278970215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_ForWalking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,6 +1512,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3846893500490961268, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5775634264862541271, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1599,6 +1603,10 @@ PrefabInstance:
     - target: {fileID: 5775634264862541275, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
       propertyPath: m_Name
       value: DialoguePanel_Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323129998400161682, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
@@ -1688,7 +1696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 330681165}
   - component: {fileID: 330681166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_RoofEdge_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2018,7 +2026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405306813}
   - component: {fileID: 405306814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2412,7 +2420,7 @@ GameObject:
   - component: {fileID: 485221419}
   - component: {fileID: 485221418}
   - component: {fileID: 485221417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2586,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: soda (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 640042c22d473f442ae288c8813d30e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640042c22d473f442ae288c8813d30e4, type: 3}
 --- !u!4 &485226998 stripped
@@ -2624,6 +2636,17 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &490830492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8986910672675396123, guid: 2b2b2166937bf471abbba91d01c6fcd8, type: 3}
+  m_PrefabInstance: {fileID: 286619051}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506164224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,6 +2747,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: bab9bd88669500845b952f4cd883ff28, type: 3}
       propertyPath: m_Name
       value: car4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: bab9bd88669500845b952f4cd883ff28, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: bab9bd88669500845b952f4cd883ff28, type: 3}
       propertyPath: m_RootOrder
@@ -3004,7 +3031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519450263}
   - component: {fileID: 519450264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_Solid_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3050,7 +3077,7 @@ GameObject:
   - component: {fileID: 529204565}
   - component: {fileID: 529204567}
   - component: {fileID: 529204566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InteractionCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3611,7 +3638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634375900}
   - component: {fileID: 634375901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_roof_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3712,7 +3739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657307212}
   - component: {fileID: 657307213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3890,7 +3917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674752874}
   - component: {fileID: 674752875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_RoofEdge_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3935,7 +3962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679770032}
   - component: {fileID: 679770033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: col_railing_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4505,7 +4532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 778719498}
   - component: {fileID: 778719499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_Solid_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4568,7 +4595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781098906}
   - component: {fileID: 781098907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_roof_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4850,7 +4877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850639967}
   - component: {fileID: 850639968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Sideplatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,7 +5135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 915567440}
   - component: {fileID: 915567441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_RoofLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5179,7 +5206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450651881989623}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180}
 --- !u!23 &953766681
 MeshRenderer:
@@ -5325,7 +5352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038675862}
   - component: {fileID: 1038675863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Backplatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5469,7 +5496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064634469}
   - component: {fileID: 1064634470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5588,7 +5615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072433091}
   - component: {fileID: 1072433092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_vent_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5780,7 +5807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089441363}
   - component: {fileID: 1089441364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Sideplatform_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6168,7 +6195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173588829}
   - component: {fileID: 1173588830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6350,7 +6377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217096865}
   - component: {fileID: 1217096866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: col_railing_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6442,7 +6469,7 @@ MonoBehaviour:
   dialogueText: {fileID: 286619052}
   dialoguePrompt: {fileID: 1308818595}
   dialogueBox: {fileID: 286619055}
-  speakerName: {fileID: 0}
+  speakerName: {fileID: 490830492}
   portraitAnim: {fileID: 286619053}
 --- !u!114 &1220038883
 MonoBehaviour:
@@ -7042,7 +7069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1318685399}
   - component: {fileID: 1318685400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7307,7 +7334,7 @@ GameObject:
   - component: {fileID: 1382757830}
   - component: {fileID: 1382757832}
   - component: {fileID: 1382757831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InteractionCollider_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7673,6 +7700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: INTERACTABLE_SODA
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 640042c22d473f442ae288c8813d30e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640042c22d473f442ae288c8813d30e4, type: 3}
 --- !u!1001 &1511484349
@@ -7847,7 +7878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511739391}
   - component: {fileID: 1511739392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_Solid_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7960,7 +7991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1560365439}
   - component: {fileID: 1560365440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8121,7 +8152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1614536900}
   - component: {fileID: 1614536901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_vent_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8273,7 +8304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625198759}
   - component: {fileID: 1625198760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8318,7 +8349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1639921721}
   - component: {fileID: 1639921722}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8363,7 +8394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649471622}
   - component: {fileID: 1649471623}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_railing_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8740,7 +8771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775965606}
   - component: {fileID: 1775965607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_RoofEdge_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8785,7 +8816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799582466}
   - component: {fileID: 1799582467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9062,7 +9093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1888055667}
   - component: {fileID: 1888055668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_roof_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9561,7 +9592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998124677}
   - component: {fileID: 1998124678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_Solid_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9606,7 +9637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005509995}
   - component: {fileID: 2005509996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: col_railing_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9920,7 +9951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035423035}
   - component: {fileID: 2035423036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_B2_Edge_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10073,7 +10104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081801942}
   - component: {fileID: 2081801943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_RoofEdge_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10178,6 +10209,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 04da887aadfcb6a4fb63947d22ebf899, type: 3}
       propertyPath: m_Name
       value: Palett
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04da887aadfcb6a4fb63947d22ebf899, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04da887aadfcb6a4fb63947d22ebf899, type: 3}
@@ -10577,7 +10612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2137517997}
   - component: {fileID: 2137517998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Col_TE_roof_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10792,8 +10827,8 @@ Transform:
   - {fileID: 7961492809676103248}
   - {fileID: 455906346}
   - {fileID: 1180522291}
-  - {fileID: 176697569}
   - {fileID: 953766680}
+  - {fileID: 176697569}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10940,7 +10975,7 @@ GameObject:
   - component: {fileID: 7961492809676103248}
   - component: {fileID: 8892360750454854361}
   - component: {fileID: 3042035160886367370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SingleWire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11062,7 +11097,7 @@ GameObject:
   - component: {fileID: 3857571360189713056}
   - component: {fileID: 8794943099105893671}
   - component: {fileID: 8794943099105893672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: balcony1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11569,7 +11604,7 @@ GameObject:
   - component: {fileID: 8288941058990574211}
   - component: {fileID: 6440984910116373735}
   - component: {fileID: 8288941058990574212}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INTERACTOBJECT_ventsystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11673,7 +11708,7 @@ GameObject:
   - component: {fileID: 5397486116611682493}
   - component: {fileID: 7673433129425418116}
   - component: {fileID: 7673433129425418117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INTERACTstore_ventsystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11996,7 +12031,7 @@ GameObject:
   - component: {fileID: 4420708423083404590}
   - component: {fileID: 5348789696199204272}
   - component: {fileID: 3671290375001880479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoubleWire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13418,7 +13453,7 @@ GameObject:
   - component: {fileID: 2752366735527251104}
   - component: {fileID: 4869223578876010921}
   - component: {fileID: 7723773159589686589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: railing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14185,7 +14220,7 @@ GameObject:
   - component: {fileID: 9047994541045357281}
   - component: {fileID: 1567466362788565779}
   - component: {fileID: 9153019877307650511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: balcony2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
