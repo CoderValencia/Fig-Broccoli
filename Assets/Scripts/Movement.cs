@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     public Animator animator;
     float horizontalInput;
     float verticalInput;
-    public SoundManager soundManager;
+    
 
 
     Rigidbody rb;
@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        soundManager = GetComponent<SoundManager>();
+    
        
         readyToJump = true;
     }
@@ -75,7 +75,7 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
             if (verticalInput != 0 && grounded) {
                 animator.SetBool("isMoving", true);
-                soundManager.walkFigCement.Play(transform);
+                //soundManager.walkFigCement.Play(transform);
 
 
             }

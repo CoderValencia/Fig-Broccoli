@@ -61,9 +61,9 @@ public class PickUp : MonoBehaviour
 
         }
 
-        if (SceneManager.GetActiveScene().name == "Tutorial" && dropOffItemsCount == 1)
+        if (SceneManager.GetActiveScene().name == "Level0-2_Tutorial" && dropOffItemsCount == 1)
         {
-            SceneManager.LoadScene("Broccoli_Capture");
+            SceneManager.LoadScene("Level0-2_PreCapture");
         }
 
 

@@ -45,11 +45,13 @@ public class DialogueArea : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && dialoguePrompt.gameObject.activeInHierarchy == true )
         {
             EnterDialogueMode(inkJson);
+
            
         }
-        if (dialogueBox == true && Input.GetMouseButtonDown(0))
+        if (dialogueBox.activeInHierarchy == true && Input.GetMouseButtonDown(0))
         {
             ContinueStory();
+            Debug.Log("Continue Story");
         }
     }
 
@@ -101,8 +103,8 @@ public class DialogueArea : MonoBehaviour
 
         switch (currentScene.name)
         {
-            case "Level_1_beta_layout_Tyson":
-                SceneManager.LoadScene("Level_1_beta_layout");
+            case "Opening":
+                SceneManager.LoadScene("Level0-2_Tutorial");
                 break;
             default:
                 break;
@@ -113,6 +115,7 @@ public class DialogueArea : MonoBehaviour
 
     void ContinueStory()
     {
+        Debug.Log(currentStory.currentText);
         if (currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
@@ -121,7 +124,7 @@ public class DialogueArea : MonoBehaviour
         else
         {
             ExitDialogue();
-            
+
         }
     }
 

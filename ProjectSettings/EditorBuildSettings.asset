@@ -9,29 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 7a76cb78f10f93646aa29e8e320708d6
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Opening_Beta.unity
-    guid: 016125d1c82ac5846946dba49e5d7ca9
+    path: Assets/Scenes/Release/Opening.unity
+    guid: db0defe216f091b42899332c947ebe92
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Tutorial_Opening.unity
-    guid: 19e8a0660ba6f1c47910d55ca8e40034
+    path: Assets/Scenes/Release/Level0-2_Tutorial.unity
+    guid: 5c508ede9fd4a2f4f8b10112173ddd66
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Tutorial.unity
-    guid: 1c4b2e2f3dc33ea4da539873ce64431f
+    path: Assets/Scenes/Release/Level0-2_PreCapture.unity
+    guid: 844a6e017c862dd4fb33cd1e70e08459
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Broccoli_Capture.unity
-    guid: 5c39caae5a1936b44bf8dd3c14c0e77a
+    path: Assets/Scenes/Release/Level1_BroccoliCapture.unity
+    guid: 62b827b23d0833d4fae48bd7875cf974
   - enabled: 1
-    path: Assets/Scenes/Beta Levels/Level_1_beta_layout_Tyson.unity
-    guid: 249597f6368500448b900b311ab06832
-  - enabled: 1
-    path: Assets/Scenes/Beta Levels/Level_1_beta_layout.unity
-    guid: 8607f8a15ef1e0947aae4737c464f23f
-  - enabled: 1
-    path: Assets/Scenes/Beta Levels/Level_1_beta_layout_Tyson_Done.unity
-    guid: 26e5deca0fe64f74491407661fb7a9a9
-  - enabled: 1
-    path: Assets/Scenes/Beta Levels/Level_2_prototype.unity
-    guid: cc70db573ac096443aff8a76ae9bcfb0
+    path: Assets/Scenes/Release/Level0-2_PostCapture.unity
+    guid: 406cba2cff2733c48beabcd240cd939a
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: c682a0f578049ba45a08aa04a4748d03

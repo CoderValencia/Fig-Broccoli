@@ -71,18 +71,15 @@ public class CutsceneScript : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueBox.SetActive(false) ;
         dialogueText.text = "";
+        Debug.Log(currentScene.name);
         switch (currentScene.name)
         {
-            case "Opening_Beta":
-                SceneManager.LoadScene("Tutorial_Opening");
+            case "Level0-2_PreCapture":
+                Debug.Log(currentScene.name);
+                SceneManager.LoadScene("Level1_BroccoliCapture");
                 break;
-            case "Tutorial_Opening":
-                SceneManager.LoadScene("Tutorial");
-                break;
-            case "Broccoli_Capture":
-                SceneManager.LoadScene("Level_1_beta_layout_Tyson");
-                break;
-            case "Level_1_beta_layout_Tyson_Done":
+            case "Level0-2_PostCapture":
+                Debug.Log(currentScene.name);
                 SceneManager.LoadScene("WinScene");
                 break;
             default: 

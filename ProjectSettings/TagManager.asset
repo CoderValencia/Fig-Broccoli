@@ -10,6 +10,7 @@ TagManager:
   - Searchable
   - Keys
   - Piano
+  - Mound
   layers:
   - Default
   - TransparentFX
