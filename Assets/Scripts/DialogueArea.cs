@@ -106,6 +106,9 @@ public class DialogueArea : MonoBehaviour
             case "Opening":
                 SceneManager.LoadScene("Level0-2_Tutorial");
                 break;
+            case "Level1_MeetTyson":
+                SceneManager.LoadScene("Level1_FindPianoAndKeys");
+                break;
             default:
                 break;
 

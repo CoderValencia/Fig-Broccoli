@@ -75,11 +75,12 @@ public class CutsceneScript : MonoBehaviour
         switch (currentScene.name)
         {
             case "Level0-2_PreCapture":
-                Debug.Log(currentScene.name);
                 SceneManager.LoadScene("Level1_BroccoliCapture");
                 break;
             case "Level0-2_PostCapture":
-                Debug.Log(currentScene.name);
+                SceneManager.LoadScene("Level1_MeetTyson");
+                break;
+            case "Level1_TysonDone":
                 SceneManager.LoadScene("WinScene");
                 break;
             default: 

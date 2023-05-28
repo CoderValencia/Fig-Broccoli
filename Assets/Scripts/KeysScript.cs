@@ -22,7 +22,7 @@ public class KeysScript : MonoBehaviour
         CountText.text = totalKeys.ToString();
         if (pianoPickUp.PianoDroppedOff == true && totalKeys == 4)
         {
-            SceneManager.LoadScene("Level_1_beta_layout_Tyson_Donet");
+            SceneManager.LoadScene("Level1_TysonDone");
         }
     }
 }
