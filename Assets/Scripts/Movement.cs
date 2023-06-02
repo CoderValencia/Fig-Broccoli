@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sonity;
 
 
 public class Movement : MonoBehaviour
@@ -75,13 +76,14 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
             if (verticalInput != 0 && grounded) {
                 animator.SetBool("isMoving", true);
-                //soundManager.walkFigCement.Play(transform);
+                SoundManager.instance.walkFigCement.Play(transform);
 
 
             }
             else if (verticalInput== 0 && grounded)
             {
                 animator.SetBool("isMoving", false);
+                SoundManager.instance.walkFigCement.Stop(transform);
             }
        
   

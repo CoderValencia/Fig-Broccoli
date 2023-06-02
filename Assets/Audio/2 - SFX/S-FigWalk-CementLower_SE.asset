@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: S-FigWalk-Cement_SE
+  m_Name: S-FigWalk-CementLower_SE
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -126,7 +126,7 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 11400000, guid: 06e488cd069ef4b4294fe0034e35395a, type: 2}
+      - {fileID: 11400000, guid: ebb28ac2d95fa2d449cd5c7aabd1a6ee, type: 2}
       triggerOnTailWhichToPlay: 1
       triggerOnTailLength: 0
       triggerOnTailBpm: 120
