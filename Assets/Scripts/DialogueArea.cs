@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using Ink.Runtime;
 using System.Linq;
 using System.Collections.Generic;
+using Sonity;
 
 public class DialogueArea : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class DialogueArea : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI dialoguePrompt;
     public GameObject dialogueBox;
-
 
  
     public TextMeshProUGUI speakerName;
@@ -149,12 +149,15 @@ public class DialogueArea : MonoBehaviour
             {
                 case "Broccoli":
                     portraitAnim.Play("Broccoli");
+                    SoundManager.instance.talkBroccoli.Play(transform);
                     break;
                 case "Fig":
                     portraitAnim.Play("Fig");
+                    SoundManager.instance.talkFig.Play(transform);
                     break;
                 case "Tyson":
                     portraitAnim.Play("Tyson");
+                    SoundManager.instance.talkBird.Play(transform);
                     break;
                 default:
                     break;

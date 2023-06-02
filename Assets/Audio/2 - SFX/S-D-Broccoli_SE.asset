@@ -21,7 +21,7 @@ MonoBehaviour:
       expandSettings: 1
       expandTriggerOnPlay: 0
       expandTriggerOnStop: 0
-      expandTriggerOnTail: 0
+      expandTriggerOnTail: 1
       expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
       soundMix: {fileID: 0}
       soundPolyGroup: {fileID: 0}
       soundPolyGroupPriority: 1
-      cooldownTime: 0
+      cooldownTime: 0.2
       probability: 100
       expandIntensity: 0
       intensityAdd: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 0
       triggerOnTailSoundEvents:
-      - {fileID: 0}
+      - {fileID: 11400000, guid: e084c43bfa7356647a9ad7dfeca4b8c0, type: 2}
       triggerOnTailWhichToPlay: 0
       triggerOnTailLength: 0
       triggerOnTailBpm: 120

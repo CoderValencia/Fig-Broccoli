@@ -98,7 +98,7 @@ MonoBehaviour:
         onEnableUse: 0
         onDisableUse: 0
         onStartUse: 1
-        onDestroyUse: 0
+        onDestroyUse: 1
         onTriggerEnterUse: 0
         onTriggerExitUse: 0
         onTriggerEnter2DUse: 0
