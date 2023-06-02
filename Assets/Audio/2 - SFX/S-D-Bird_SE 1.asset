@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: S-D-Bird_SE
+  m_Name: S-D-Bird_SE 1
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -126,7 +126,7 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 11400000, guid: d362200949a400541be281a3e901742c, type: 2}
+      - {fileID: 11400000, guid: 8ad01f700cb5fdd4499de3266b8f139f, type: 2}
       triggerOnTailWhichToPlay: 0
       triggerOnTailLength: 0
       triggerOnTailBpm: 120
