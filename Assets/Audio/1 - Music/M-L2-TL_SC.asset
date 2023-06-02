@@ -23,7 +23,7 @@ MonoBehaviour:
       audioMixerGroup: {fileID: 0}
       priority: 1
       distanceEnabled: 1
-      distanceScale: 10
+      distanceScale: 40
       preventEndClicks: 1
       loopEnabled: 0
       followPosition: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
       volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
-      volumeDistanceRolloff: -2
+      volumeDistanceRolloff: 0.9
       volumeDistanceCurve:
         serializedVersion: 2
         m_Curve:

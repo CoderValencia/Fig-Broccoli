@@ -7302,6 +7302,148 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7200813882020725636, guid: 53cb4950c8f6d5f4f94f448c21d2d865, type: 3}
+--- !u!1 &1512163018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512163020}
+  - component: {fileID: 1512163019}
+  m_Layer: 0
+  m_Name: Top Left Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1512163019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512163018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65c3a80a1a35884b9a0bf632cd09354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  internals:
+    soundEventsExpand: 1
+    soundTriggerPart:
+    - expandSoundEvent: 1
+      soundEvent: {fileID: 11400000, guid: a1947eb7b1229d24d91727e8bb8d5e1f, type: 2}
+      soundEventModifier:
+        volumeDecibel: 0
+        volumeRatio: 1
+        pitchSemitone: 0
+        pitchRatio: 1
+        delay: 0
+        increase2D: 0
+        intensity: 1
+        reverbZoneMixDecibel: 0
+        reverbZoneMixRatio: 1
+        startPosition: 0
+        reverse: 0
+        stereoPan: 0
+        polyphony: 1
+        distanceScale: 1
+        distortionIncrease: 0
+        fadeInLength: 0
+        fadeInShape: 2
+        fadeOutLength: 0
+        fadeOutShape: -2
+        followPosition: 1
+        bypassReverbZones: 0
+        bypassVoiceEffects: 0
+        bypassListenerEffects: 0
+        volumeUse: 0
+        pitchUse: 0
+        delayUse: 0
+        increase2DUse: 0
+        intensityUse: 0
+        reverbZoneMixUse: 0
+        startPositionUse: 0
+        reverseUse: 0
+        stereoPanUse: 0
+        polyphonyUse: 0
+        distanceScaleUse: 0
+        distortionIncreaseUse: 0
+        fadeInLengthUse: 0
+        fadeInShapeUse: 0
+        fadeOutLengthUse: 0
+        fadeOutShapeUse: 0
+        followPositionUse: 0
+        bypassReverbZonesUse: 0
+        bypassVoiceEffectsUse: 0
+        bypassListenerEffectsUse: 0
+      expandModifier: 1
+      soundTriggerTodo:
+        onEnableUse: 0
+        onDisableUse: 0
+        onStartUse: 1
+        onDestroyUse: 1
+        onTriggerEnterUse: 0
+        onTriggerExitUse: 0
+        onTriggerEnter2DUse: 0
+        onTriggerExit2DUse: 0
+        onCollisionEnterUse: 0
+        onCollisionExitUse: 0
+        onCollisionEnter2DUse: 0
+        onCollisionExit2DUse: 0
+        onMouseEnterUse: 0
+        onMouseExitUse: 0
+        onMouseDownUse: 0
+        onMouseUpUse: 0
+        onEnableAction: 0
+        onDisableAction: 1
+        onStartAction: 0
+        onDestroyAction: 1
+        onTriggerEnterAction: 0
+        onTriggerExitAction: 1
+        onTriggerEnter2DAction: 0
+        onTriggerExit2DAction: 1
+        onCollisionEnterAction: 0
+        onCollisionExitAction: 1
+        onCollisionEnter2DAction: 0
+        onCollisionExit2DAction: 1
+        onMouseEnterAction: 0
+        onMouseExitAction: 1
+        onMouseDownAction: 0
+        onMouseUpAction: 1
+      expandTrigger: 1
+      triggerTagUse: 0
+      triggerTags:
+      - Untagged
+      collisionVelocityToIntensity: 0
+      collisionTagUse: 0
+      collisionTags:
+      - Untagged
+    soundParameterDistanceScale:
+      internals:
+        type: 10
+        updateMode: 1
+        valueFloat: 1
+        valueInt: 0
+        valueBool: 0
+--- !u!4 &1512163020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512163018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.5108, y: 13.37238, z: 7.2543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1534141422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7833,116 +7975,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000001, y: 0.020014122, z: 0.0060524293}
   m_Center: {x: 0, y: 0.000006799119, z: 0.0030262147}
---- !u!114 &1633496222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633496216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65c3a80a1a35884b9a0bf632cd09354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  internals:
-    soundEventsExpand: 1
-    soundTriggerPart:
-    - expandSoundEvent: 1
-      soundEvent: {fileID: 11400000, guid: a1947eb7b1229d24d91727e8bb8d5e1f, type: 2}
-      soundEventModifier:
-        volumeDecibel: 0
-        volumeRatio: 1
-        pitchSemitone: 0
-        pitchRatio: 1
-        delay: 0
-        increase2D: 0
-        intensity: 1
-        reverbZoneMixDecibel: 0
-        reverbZoneMixRatio: 1
-        startPosition: 0
-        reverse: 0
-        stereoPan: 0
-        polyphony: 1
-        distanceScale: 1
-        distortionIncrease: 0
-        fadeInLength: 0
-        fadeInShape: 2
-        fadeOutLength: 0
-        fadeOutShape: -2
-        followPosition: 1
-        bypassReverbZones: 0
-        bypassVoiceEffects: 0
-        bypassListenerEffects: 0
-        volumeUse: 0
-        pitchUse: 0
-        delayUse: 0
-        increase2DUse: 0
-        intensityUse: 0
-        reverbZoneMixUse: 0
-        startPositionUse: 0
-        reverseUse: 0
-        stereoPanUse: 0
-        polyphonyUse: 0
-        distanceScaleUse: 0
-        distortionIncreaseUse: 0
-        fadeInLengthUse: 0
-        fadeInShapeUse: 0
-        fadeOutLengthUse: 0
-        fadeOutShapeUse: 0
-        followPositionUse: 0
-        bypassReverbZonesUse: 0
-        bypassVoiceEffectsUse: 0
-        bypassListenerEffectsUse: 0
-      expandModifier: 1
-      soundTriggerTodo:
-        onEnableUse: 0
-        onDisableUse: 0
-        onStartUse: 1
-        onDestroyUse: 1
-        onTriggerEnterUse: 0
-        onTriggerExitUse: 0
-        onTriggerEnter2DUse: 0
-        onTriggerExit2DUse: 0
-        onCollisionEnterUse: 0
-        onCollisionExitUse: 0
-        onCollisionEnter2DUse: 0
-        onCollisionExit2DUse: 0
-        onMouseEnterUse: 0
-        onMouseExitUse: 0
-        onMouseDownUse: 0
-        onMouseUpUse: 0
-        onEnableAction: 0
-        onDisableAction: 1
-        onStartAction: 0
-        onDestroyAction: 1
-        onTriggerEnterAction: 0
-        onTriggerExitAction: 1
-        onTriggerEnter2DAction: 0
-        onTriggerExit2DAction: 1
-        onCollisionEnterAction: 0
-        onCollisionExitAction: 1
-        onCollisionEnter2DAction: 0
-        onCollisionExit2DAction: 1
-        onMouseEnterAction: 0
-        onMouseExitAction: 1
-        onMouseDownAction: 0
-        onMouseUpAction: 1
-      expandTrigger: 1
-      triggerTagUse: 0
-      triggerTags:
-      - Untagged
-      collisionVelocityToIntensity: 0
-      collisionTagUse: 0
-      collisionTags:
-      - Untagged
-    soundParameterDistanceScale:
-      internals:
-        type: 10
-        updateMode: 1
-        valueFloat: 1
-        valueInt: 0
-        valueBool: 0
 --- !u!1001 &1673260178
 PrefabInstance:
   m_ObjectHideFlags: 0
