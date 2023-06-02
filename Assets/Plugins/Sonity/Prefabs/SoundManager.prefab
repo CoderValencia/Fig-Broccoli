@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4796163816734636}
   - component: {fileID: -2683738262453034793}
+  - component: {fileID: 7120336922943557709}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -60,8 +61,8 @@ MonoBehaviour:
       voiceLimit: 32
       voiceStopTime: 5
       voiceEffectLimit: 32
-      debugSoundEventsInSceneViewEnabled: 0
-      debugSoundEventsInGameViewEnabled: 0
+      debugSoundEventsInSceneViewEnabled: 1
+      debugSoundEventsInGameViewEnabled: 1
       debugSoundEventsFontSize: 16
       debugSoundEventsVolumeToAlpha: 0.5
       debugSoundEventsLifetimeToAlpha: 0.75
@@ -78,3 +79,30 @@ MonoBehaviour:
       statisticsShowVoices: 0
       statisticsShowPlays: 0
       statisticsShowVolume: 0
+--- !u!114 &7120336922943557709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576988032187696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb543c90961ff242833f656baf8385c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  youDidIt: {fileID: 11400000, guid: 3b9ad0c678b48c64eb9a06dd51042281, type: 2}
+  talkFig: {fileID: 11400000, guid: a5a4f74c9e09e914bb09eafc531b28de, type: 2}
+  talkBroccoli: {fileID: 11400000, guid: b0a068955fb154247974532247e4048f, type: 2}
+  talkBird: {fileID: 11400000, guid: 7e227d4bcab50f94abc7c08558a328e5, type: 2}
+  talkCat: {fileID: 11400000, guid: 86deeb254276c0240ba54de18f8444ec, type: 2}
+  talkMouse: {fileID: 11400000, guid: 74d6ca77cbe555340addfac02b9bc8fe, type: 2}
+  walkFigCement: {fileID: 11400000, guid: ebb28ac2d95fa2d449cd5c7aabd1a6ee, type: 2}
+  walkFigGrass: {fileID: 11400000, guid: fc9eba7e2b9d1dc41b9e77849e33822f, type: 2}
+  kidnapBroccoli: {fileID: 11400000, guid: 6857f01b43a026c45805769b27a09b9f, type: 2}
+  pianoFull: {fileID: 11400000, guid: a06dd14316d4157409437bf36679ebf5, type: 2}
+  piano1: {fileID: 11400000, guid: 7832fcf18c88bec4c85acf80e13dc054, type: 2}
+  piano2: {fileID: 11400000, guid: 82f3dfd377cac5548bd200ea3f5814d8, type: 2}
+  piano3: {fileID: 11400000, guid: bb6b7b8f27d1c44439b0eea59b07c5ac, type: 2}
+  piano4: {fileID: 11400000, guid: 94724bbdbe43b2e49b3fd1049133f584, type: 2}
+  piano5: {fileID: 11400000, guid: 1c2e933b9296af74db121d2a6f033ba7, type: 2}

@@ -758,14 +758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2683738262453034793, guid: 1305720c8c0a1794eb921f1a69df2ec0, type: 3}
-      propertyPath: internals.settings.debugSoundEventsInGameViewEnabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2683738262453034793, guid: 1305720c8c0a1794eb921f1a69df2ec0, type: 3}
-      propertyPath: internals.settings.debugSoundEventsInSceneViewEnabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1576988032187696, guid: 1305720c8c0a1794eb921f1a69df2ec0, type: 3}
       propertyPath: m_Name
       value: SoundManager
